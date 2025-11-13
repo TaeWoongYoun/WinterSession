@@ -7,6 +7,12 @@
 # Build output
 out/
 
+# .vscode
+.vscode/
+
+# Visual Studio 2022
+.vs/
+
 # Compiled class files
 *.class
 
