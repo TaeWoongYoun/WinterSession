@@ -2,4 +2,4 @@
 
 Java -> IntelliJ<br>
 C++ -> Visual Studio 2022 <br>
-JS -> Visual Studio Code 
+WEB -> Visual Studio Code 
