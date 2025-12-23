@@ -1,7 +1,14 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "C++ TEST!" << std::endl;
-    return 0;
+	int nNum = 10;
+
+	cout << "10진수 : " << nNum << endl;
+
+	cout << oct << "8진수 : " << nNum << endl;
+
+	cout << hex << "16진수 : " << nNum << endl;
+
+	return 0;
 }
