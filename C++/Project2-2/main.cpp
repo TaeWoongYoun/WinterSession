@@ -1,7 +1,47 @@
 #include <iostream>
 using namespace std;
 
+class Car {
+public:
+    string brand;
+    int speed;
+    Car();
+    Car(string brand);
+    Car(string brand, int speed);
+    void printInfo();
+};
 
+Car::Car() {
+    brand = "Unknown";
+    speed = 0;
+    
+}
+
+Car::Car(string b) {
+    brand = b;
+    speed = 0;
+}
+
+Car::Car(string b, int s) {
+    brand = b;
+    speed = s;
+}
+
+void Car::printInfo() {
+    cout << "Brand : " << brand << ", " << "Speed : " << speed << endl;
+}
+
+int main() {
+    Car car1;
+    Car car2("Hyundai");
+    Car car3("Tesla", 120);
+
+    car1.printInfo();
+    car2.printInfo();
+    car3.printInfo();
+
+    return 0;
+}
 
 /*
 과제 1: Rectangle 클래스
