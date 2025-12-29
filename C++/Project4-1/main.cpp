@@ -32,8 +32,6 @@ int main() {
 		cout << pArray[i].getArea() << " ";
 	}
 
-	cout << endl;
-
 	int num = 0;
 
 	for (int i = 0; i < cnt; i++) {
@@ -43,7 +41,7 @@ int main() {
 		}
 	}
 
-	cout << "면적이 100에서 200 사이인 원의 개수는 " << num;
+	cout << endl << "면적이 100에서 200 사이인 원의 개수는 " << num;
 
 	delete[] pArray;
 
