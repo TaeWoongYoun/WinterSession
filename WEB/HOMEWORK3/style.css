@@ -1,0 +1,33 @@
+*{
+    padding: 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+#main {
+    font-size: 32px;
+}
+
+p{
+    background-color: black;
+    color: #fff;
+}
+
+#main > div {
+    background-color: yellow;
+}
+
+ul li {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.attribute {
+    color: green;
+    font-size: 24px;
+}
+
+h2{
+    font-size: 48px;
+    color: blue;
+}
