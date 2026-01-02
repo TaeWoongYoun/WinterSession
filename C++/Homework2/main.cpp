@@ -5,9 +5,9 @@ int main() {
 
 	char city[21];
 
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇÏ¶ó (20°³ ¹Ì¸¸) ";
+	cout << "ì´ë¦„ì„ ì…ë ¥í•˜ë¼(20ê°œ ë¯¸ë§Œ) ";
 	cin.getline(city, 21, '.');
-	cout << "ÀÌ¸§Àº " << city << endl;
+	cout << "ì´ë¦„ì€ " << city << endl;
 
 	return 0;
 }
