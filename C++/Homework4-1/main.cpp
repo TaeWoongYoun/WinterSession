@@ -14,13 +14,13 @@ int Max(int* arr, int size) {
 int main() {
     int* arr = new int[5];
 
-    cout << "5ê°œ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” ";
+    cout << "5°³ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä ";
     for (int i = 0; i < 5; i++) {
         cin >> arr[i];
     }
 
     int max = Max(arr, 5);
-    cout << "max = " << max << "ì…ë‹ˆë‹¤" << endl;
+    cout << "max = " << max << "ÀÔ´Ï´Ù" << endl;
 
     delete[] arr;
     return 0;
