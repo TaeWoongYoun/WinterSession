@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int* arr = new int[5];
 
-    cout << "5�� ������ �Է��ϼ��� ";
+    cout << "5개 정수를 입력하세요 ";
     for (int i = 0; i < 5; i++) {
         cin >> arr[i];
     }
@@ -16,8 +16,10 @@ int main() {
         }
     }
 
-    cout << "max = " << max  << "�Դϴ�" << endl;
+    cout << "max = " << max  << "입니다" << endl;
 
     delete[] arr;
     return 0;
 }
+
+// 입력은 main에서 받고 큰 수 출력은 함수에서. 배열을 반환은 하나 main에서 확인은 못함 pointer로 참조식으로 반환
