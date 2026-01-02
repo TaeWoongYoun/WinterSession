@@ -31,7 +31,7 @@ Dept::~Dept() {
 }
 
 void Dept::read() {
-	cout << size << "10명의 성적을 입력하세요(정수) : ";
+	cout << "10명의 성적을 입력하세요(정수) : ";
 	for (int i = 0; i < size; i++) {
 		cin >> scores[i];
 	}
@@ -53,5 +53,5 @@ int main() {
 	Dept com(10);
 	com.read();
 	int n = countPass(com);
-	cout << "60점 이상은 " << n << "명";
+	cout << "60점 이상은 " << n << " 명";
 }
