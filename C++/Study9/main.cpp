@@ -1,19 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class Power {
-    int kick;    // private
-    int punch;   // private
+class Base {
+	int a;
+protected:
+	void setA(int a) { this->a = a; }
 public:
-    // 외부 함수를 친구로 선언!
-    friend void showPower(Power p);
+	void showA() { cout << a; }
 };
 
-// 외부 함수인데 private 멤버 접근 가능!
-void showPower(Power p) {
-    cout << p.kick << " " << p.punch;  // OK!
-}
+class Derived : private Base {
+	int b;
+protected:
+	void setB(int b) { this->b = b; }
+public:
+	void showB() {
+		setA(5); // ①
+		showA(); // ②
+		cout << b;
+	}
+};
 
 int main() {
-
+	Derived d;
+	d.showB();
+	return 0;
 }
